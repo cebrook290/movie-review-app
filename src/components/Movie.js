@@ -12,11 +12,10 @@ export default class Movie2 extends React.Component {
             return (
                 <> 
 
-                <div className='movList'>
+                <div className='container'>
                     <ul> {List.map((item, index) => {
                         return(
-                            <li className='movie' key={index}>
-                                <div className='card mb-3' style={{maxwidth: 540}}>
+                                <div className='card mb-3' style={{maxwidth: 540}} key={index}>
                                     <div className='row no-gutters'>
                                         <div className='col-md-4'>
                                             <img src={item.img} alt={item.title} className='card-img'/>
@@ -37,7 +36,6 @@ export default class Movie2 extends React.Component {
 
                                     </div>
                                 </div>
-                            </li>
                         )
                     })}
                     </ul>
