@@ -10,24 +10,28 @@ const Stars = () => {
             const ratingValue = i + 1;
 
             return (
-                <label>
-                    <input 
-                    type='radio' 
-                    name='rating' 
-                    value={ratingValue} 
-                    onClick={() => setRating(ratingValue)}
-                    
-                    />
-                    <FaStar 
-                    className="star" color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9" } 
-                    size={25} 
-                    onMouseEnter= {() => setHover(ratingValue)}
-                    onMouseLeave= {() => setHover(null)}
-                    />
-                </label>
+                <div className="form-check form-check-inline">
+                    <label>
+                        <input className="text-center" 
+                        type='radio' 
+                        name='rating' 
+                        value={ratingValue} 
+                        onClick={() => setRating(ratingValue)}
+                        
+                        />
+                        <FaStar 
+                        className="text-center" id="star"  color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9" } 
+                        size={25} 
+                        onMouseEnter= {() => setHover(ratingValue)}
+                        onMouseLeave= {() => setHover(null)}
+                        />
+                    </label>
+                </div>
             );
         })}  
-        <p>The raiting is {rating}</p>
+        {/* <div className="mx-auto">
+        <p style={{fontSize: 15 }}>Your raiting is {rating}</p>
+        </div> */}
     </div>
 }
 
