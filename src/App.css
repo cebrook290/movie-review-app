@@ -1,11 +1,11 @@
 
 .app {
+  margin-right: auto;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   display: inline;
-  background-image: url('https://wallpapers.com/images/hd/ring-light-avengers-logo-mxlw1n2jyvfdvlab.jpg'); 
-}
+}  
 
 input[type='radio'] {
   display: none;
@@ -19,17 +19,16 @@ input[type='radio'] {
   display: flex;
 }
 
-.form {
+/* .form {
   border: 1px solid #0d0d0d;
-  box-shadow: 1px 1px #0d0d0d 2px 2px #0d0d0d;
   padding: 1rem;
   width: 20rem;
-}
+} */
 
 input,textarea, button {
   display: block;
-  margin: 0.5rem auto 0 auto;
-  padding: 0.25rem 0.5rem;
+  margin: auto;
+  padding: 0.5rem 0.5rem;
 }
 
 input, textarea {
@@ -46,9 +45,7 @@ h1 {
   padding-top: 2rem;
 }
 
-ul {
-  list-style-type: none;
-}
+
 
 /* 
 star colors

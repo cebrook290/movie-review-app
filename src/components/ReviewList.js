@@ -15,7 +15,7 @@ export default function ReviewList({setForm, setEditing, reviews, setReviews}) {
     }
 
   return (
-    <div className='card-deck'>
+    <div className='card-group'>
         <div className='reviewList'>
         {reviews.map(review => (
             <Review 
